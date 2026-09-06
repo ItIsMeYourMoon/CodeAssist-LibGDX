@@ -58,7 +58,7 @@ internal object TemplateSupport {
     /** What every built-in template compiles against: the newest level the IDE ships support for. */
     const val COMPILE_SDK = AndroidApiLevels.LATEST
 
-    /** Google's Material Components for Android — the library behind Material You theming + the FAB/Snackbar. */
+    /*LibGDX dependencies*/
     const val GDX_COORDINATE = "com.badlogicgames.gdx:gdx:1.14.2"
     const val GDX_BACKEND_ANDROID_COORDINATE = "com.badlogicgames.gdx:gdx-backend-android:1.14.2"
     const val GDX_BOX_COORDINATE = "com.badlogicgames.gdx:gdx-box2d:1.14.2"
@@ -121,7 +121,6 @@ object CodeAssistLibGDXTemplate : ProjectTemplate {
         val pkg = args.packageName
         val minSdk = args.int("minSdk", 26)
         val targetSDK = args.int("targetSdk", TemplateSupport.COMPILE_SDK)
-        val kotlin = false
         scaffold.workspace.beginModification().apply {
             addProject(args.name, BuildSystemId.NATIVE, scaffold.rootDir)
             commit()
@@ -267,9 +266,9 @@ object CodeAssistLibGDXTemplate : ProjectTemplate {
             """
         )
         /*
-        So we're now copying it from this template plugin into newly created LibGDX project's jniLibs folder
-        Keep in mind that we're injecting one for 64 wnd one for 32 bit system. If you need others to just get .so files somewhere else and put them there accordingly 
-        Also pay attention that their version is 1.14.2 and if you want to update them them in the feature just replace them with newer .so files
+        So we're now copying libgdx.so from this template plugin into newly created LibGDX project's jniLibs folder
+        Keep in mind that we're injecting one for 64 and one for 32 bit system. If you need others to just get .so files somewhere else and put them there accordingly 
+        Also pay attention that their versions are 1.14.2 and if you want to update them them in the feature just replace them with newer .so files
         */
         val platform64JarBytes = readResourceBytes("/templates/gdx-platform-1.14.2-natives-arm64-v8a.so")
         val platform32JarBytes = readResourceBytes("/templates/gdx-platform-1.14.2-natives-armeabi-v7a.so")
