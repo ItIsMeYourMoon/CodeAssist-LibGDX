@@ -17,5 +17,11 @@ class PluginInfoActivity : Activity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tyron12233/CodeAssist"))
             startActivity(intent)
         }
+        
+        val codeAssistLibGDXRepo : ImageView = findViewById(R.id.codeassist_gdx_repo)
+        codeAssistLibGDXRepo.setOnClickListener{
+            val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ItIsMeYourMoon/CodeAssist-LibGDX"))
+            startActivity(intent)
+        }
     }
 }
