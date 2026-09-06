@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+    
+    <ImageView 
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/codeassist_gdx"/>
+    
+    <TextView
+        android:id="@+id/plugin_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/plugin_description"
+        android:paddingBottom="16dp"/>
+    
+    <kz.codingOnTheMoon.spoilercardview.SpoilerCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:title="@string/what_is_new_title"
+        app:titleTextSize="16sp"
+        app:description="@string/what_is_new_description"
+        app:descriptionTextSize="14sp"/>
+    
+    <kz.codingOnTheMoon.spoilercardview.SpoilerCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="16dp"
+        app:title="links"
+        app:titleTextSize="16sp"
+        app:contentOrientation="vertical">
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/codeassist_on_github"
+                android:layout_gravity="center_vertical"/>
+            
+            <ImageView
+                android:id="@+id/codeassist_repo" 
+                android:layout_width="120dp" 
+                android:layout_height="50dp"
+                android:src="@drawable/ic_github"/>
+            
+        </LinearLayout>
+        
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+            
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/this_template_plugin_on_github"
+                android:layout_gravity="center_vertical"/>
+        
+            <ImageView
+                android:id="@+id/codeassist_gdx_repo" 
+                android:layout_width="120dp" 
+                android:layout_height="50dp"
+                android:src="@drawable/ic_github"/>
+        </LinearLayout>
+        
+    </kz.codingOnTheMoon.spoilercardview.SpoilerCardView>
+       
+</LinearLayout>

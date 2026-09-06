@@ -1,0 +1,12 @@
+# What the IDE reads to decide whether to load this plugin, and how to list it in
+# Settings > Plugins. It is read without running any of the plugin's code, so it has to agree
+# with what the entry point actually registers.
+[plugin]
+id = "kz.codingOnTheMoon.libGDX"
+name = "CodeAssist  libGDX Template"
+version = "1.1"
+# Must equal the IDE's PLUGIN_API_VERSION, or the plugin is rejected with that reason.
+apiVersion = 3
+description = "Template plugin to support LibGDX"
+entryPoints = ["kz.codingOnTheMoon.codeassistlibgdxtemplatev1.CodeAssistLibGDXTemplatePlugin"]
+capabilities = ["ui.settingsPage","model.moduleType"]

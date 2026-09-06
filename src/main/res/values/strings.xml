@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">CodeAssist  libGDX Template</string>
+    <string name="plugin_description">A template for CodeAssist which supports LibGDX</string>
+      <string name="codeassist_s_repo">CodeAssist repo: </string>
+    <string name="this_template_plugin_on_github">This template plugin on</string>
+    <string name="codeassist_on_github">CodeAssist on</string>
+    <string name="what_is_new_title">What is new?</string>
+    <string name="what_is_new_description" formatted="false">
+        - Migrated to SPI 2.1.0\n- Removed the unnecessary settings page\n- Code was reorganized and published on GitHub\n - aslo added some few new fancy bugs
+    </string>
+</resources>
