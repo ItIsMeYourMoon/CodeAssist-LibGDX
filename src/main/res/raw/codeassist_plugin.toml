@@ -10,3 +10,4 @@ apiVersion = 3
 description = "Template plugin to support LibGDX"
 entryPoints = ["kz.codingOnTheMoon.codeassistlibgdxtemplatev1.CodeAssistLibGDXTemplatePlugin"]
 capabilities = ["ui.settingsPage","model.moduleType"]
+dependsOn = ["android-support"]

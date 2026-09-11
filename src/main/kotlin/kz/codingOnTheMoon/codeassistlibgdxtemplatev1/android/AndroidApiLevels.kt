@@ -34,7 +34,7 @@ object AndroidApiLevels {
      * still builds there. Android 17 (API 37) is therefore NOT offered yet: raising this means bundling the
      * API 37 jar first, which costs about 15 MB of APK.
      */
-    const val LATEST: Int = 36
+    const val LATEST: Long = 36
 
     /** Levels offered as a `minSdk`: the app's floor, so the whole spread. */
     val MIN_SDK_LEVELS: List<Level> = LEVELS

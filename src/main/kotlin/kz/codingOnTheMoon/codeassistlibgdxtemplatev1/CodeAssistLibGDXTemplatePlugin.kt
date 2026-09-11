@@ -1,11 +1,8 @@
 package kz.codingOnTheMoon.codeassistlibgdxtemplatev1
 
-import dev.ide.model.FacetCodecRegistry
-import dev.ide.model.ModuleTypeRegistry
 import dev.ide.model.ProjectTemplateRegistry
 import dev.ide.plugin.Plugin
 import dev.ide.plugin.PluginRegistration
-import kz.codingOnTheMoon.codeassistlibgdxtemplatev1.android.LibGDXSupport
 import kz.codingOnTheMoon.codeassistlibgdxtemplatev1.template.CodeAssistLibGDXTemplate
 
 /**
@@ -21,11 +18,7 @@ import kz.codingOnTheMoon.codeassistlibgdxtemplatev1.template.CodeAssistLibGDXTe
 class CodeAssistLibGDXTemplatePlugin() : Plugin {
 
     override fun register(reg: PluginRegistration) {
-        val log = reg.logger("CodeAssistLibGDXTemplatePlugin")
-        log.info("loaded")
         reg.contributeVia { extensionPoint, pluginId ->
-            val codecs = FacetCodecRegistry(extensionPoint)
-            LibGDXSupport.register(ModuleTypeRegistry(extensionPoint), codecs, pluginId)
             ProjectTemplateRegistry(extensionPoint).register(CodeAssistLibGDXTemplate,pluginId)
         }
     }

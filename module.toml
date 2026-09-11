@@ -35,7 +35,7 @@ resources = ["src/release/resources"]
 
 [dependencies]
 implementation = ["kotlin-stdlib", "SpoilerCardView.aar"]
-compileOnly = ["io.github.tyron12233:plugin-api:2.1.0", "io.github.tyron12233:platform-core:2.1.0", "io.github.tyron12233:project-model-api:2.1.0"]
+compileOnly = ["io.github.tyron12233:platform-core:2.1.0", "io.github.tyron12233:plugin-api:2.7.0", "io.github.tyron12233:project-model-api:2.7.0"]
 
 [android]
 namespace = "kz.codingOnTheMoon.codeassistlibgdxtemplatev1"
