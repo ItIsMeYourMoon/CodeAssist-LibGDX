@@ -14,7 +14,7 @@ import kz.codingOnTheMoon.codeassistlibgdxtemplatev1.android.AndroidAppAssets
 
 /*
 Inspired by:
-https://github.com/tyron12233/CodeAssist/blob/main/android-support%2Fsrc%2Fmain%2Fkotlin%2Fdev%2Fide%2Fandroid%2Fsupport%2Ftemplates%2FAndroidTemplates.kt 
+https://github.com/tyron12233/CodeAssist/blob/main/docs%2Fcustom-project-templates.md 
 
 Comments mainly left untouched on purpose
 */

@@ -12,6 +12,7 @@ class PluginInfoActivity : Activity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.plugin_info_activity)
+        
         val codeAssistRepo: ImageView = findViewById(R.id.codeassist_repo)
         codeAssistRepo.setOnClickListener{
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/tyron12233/CodeAssist"))
@@ -23,5 +24,7 @@ class PluginInfoActivity : Activity() {
             val intent = Intent(Intent.ACTION_VIEW, Uri.parse("https://github.com/ItIsMeYourMoon/CodeAssist-LibGDX"))
             startActivity(intent)
         }
+        
+        
     }
 }
