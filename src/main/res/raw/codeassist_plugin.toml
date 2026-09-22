@@ -4,9 +4,9 @@
 [plugin]
 id = "kz.codingOnTheMoon.libGDX"
 name = "CodeAssist  libGDX Template"
-version = "1.2"
+version = "1.2.2"
 # Must equal the IDE's PLUGIN_API_VERSION, or the plugin is rejected with that reason.
-apiVersion = 3
+apiVersion = 4
 description = "Template plugin to support LibGDX"
 entryPoints = ["kz.codingOnTheMoon.codeassistlibgdxtemplatev1.CodeAssistLibGDXTemplatePlugin"]
 capabilities = ["ui.settingsPage","model.moduleType"]

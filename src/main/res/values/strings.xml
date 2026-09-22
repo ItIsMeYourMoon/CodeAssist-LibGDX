@@ -7,6 +7,6 @@
     <string name="codeassist_on_github">CodeAssist on</string>
     <string name="what_is_new_title">What is new?</string>
    <string name="what_is_new_description" formatted="false">
-       Critical issues were fixed:\n- a facet duplicating AndroidFacet\n- registering module while it did not need one\n- one choice one option\n- code was reorganized and temple content was moved to an object
+       Migrated to SPI 3.0.0, Plugin API version 4
    </string>
 </resources>

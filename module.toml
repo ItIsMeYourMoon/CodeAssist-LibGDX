@@ -35,7 +35,7 @@ resources = ["src/release/resources"]
 
 [dependencies]
 implementation = ["kotlin-stdlib", "SpoilerCardView.aar"]
-compileOnly = ["io.github.tyron12233:platform-core:2.1.0", "io.github.tyron12233:plugin-api:2.7.0", "io.github.tyron12233:project-model-api:2.7.0"]
+compileOnly = ["io.github.tyron12233:platform-core:3.0.0", "io.github.tyron12233:plugin-api:3.0.0", "io.github.tyron12233:project-model-api:3.0.0"]
 
 [android]
 namespace = "kz.codingOnTheMoon.codeassistlibgdxtemplatev1"
@@ -43,8 +43,8 @@ compileSdk = 36
 minSdk = 26
 targetSdk = 36
 manifest = "src/main/AndroidManifest.xml"
-versionCode = 3
-versionName = "1.2"
+versionCode = 5
+versionName = "1.2.2"
 isApplication = true
 manifestPlaceholders = []
-buildTypes = [{ name = "debug", debuggable = true, minifyEnabled = false, shrinkResources = false }, { name = "release", debuggable = false, minifyEnabled = false, shrinkResources = false, proguardFiles = ["proguard-android-optimize.txt", "proguard-rules.pro"] }]
+buildTypes = [{ name = "debug", debuggable = true, minifyEnabled = false, shrinkResources = false, signingConfig = "mypreciouskey" }, { name = "release", debuggable = false, minifyEnabled = false, shrinkResources = false, proguardFiles = ["proguard-android-optimize.txt", "proguard-rules.pro"], signingConfig = "mypreciouskey" }]
